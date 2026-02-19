@@ -24,7 +24,7 @@ This project delivers value in two ways:
 
 **1. Decision support:** Provides evidence to inform whether H&K should keep, expand, or modify BOPS by quantifying how online sales changed in BOPS-exposed markets relative to non-exposed markets during the same time period.
 
-**2. Process improvement through reproducible analytics:** Implements a repeatable Databricks workflow that ingests the raw data, applies consistent cleaning and QA gates, materializes analysis-ready tables (did_panel, did_results, and dashboard aggregates), and enables a visualized dashboard reporting layer for ongoing consumption.
+**2. Process improvement through reproducible analytics:** Implements a repeatable Databricks ETL workflow that ingests the raw data, applies consistent cleaning and QA gates, materializes analysis-ready tables (did_panel, did_results, and dashboard aggregates), and enables a visualized dashboard reporting layer for ongoing consumption.
 
 ## Dataset Spec
 
@@ -46,6 +46,7 @@ Columns:
 - sales — total online sales for the DMA-week (USD)
 
 **2. Brick & Mortar Data**
+
 Grain (unit of analysis): 1 row per store × week
 
 Primary key: (id_store, date) or (id_store, year, week)
